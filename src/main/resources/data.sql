@@ -1,0 +1,10 @@
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Tom Araya', '999.999.999-99', 3500.00, '2020-07-20T10:00:00Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Dave Lombardo', '888.888.888.88', 2500.00, '2020-07-20T10:00:00Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('James Hetfield', '777.777.777-77', 1000.00, '2020-07-20T10:00:00Z', 5);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Bruce Dickinson', '666.666.666-66', 5600.00, '2020-07-20T10:00:00Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Steve Harris ', '555.555.555-55', 2300.00, '2020-07-20T10:00:00Z', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Dave Murray', '444.444.444-44', 1500.00, '2020-07-20T10:00:00Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Nicko McBrain', '333.333.333-33', 5600.50, '2020-07-20T10:00:00Z', 6);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Chuck Schuldiner', '222.222.222-22', 2100.34, '2020-07-20T10:00:00Z', 7);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Jeff Hanneman', '111.111.111-11', 2100.99, '2020-07-20T10:00:00Z', 9);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Kerry King', '000.000.000-00', 2100.66, '2020-07-20T10:00:00Z', 12);
