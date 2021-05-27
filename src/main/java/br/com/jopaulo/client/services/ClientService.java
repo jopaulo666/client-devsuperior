@@ -31,7 +31,7 @@ public class ClientService {
 	@Transactional(readOnly = true)
 	public ClientDTO findById(long id) {
 		Optional<Client> obj = repository.findById(id);
-		Client entity = obj.orElseThrow(() -> new ResourceNotFoundException("Cliente não encontrado"));
+		Client entity = obj.orElseThrow(() -> new ResourceNotFoundException("Cliente de código " +id+ " não encontrado"));
 		return new ClientDTO(entity);
 	}
 	
@@ -51,7 +51,7 @@ public class ClientService {
 			entity = repository.save(entity);
 			return new ClientDTO(entity);
 		} catch (EntityNotFoundException e) {
-			throw new ResourceNotFoundException("Id não encontrado: " + id);
+			throw new ResourceNotFoundException("Cliente de código " +id+ " não encontrado");
 		}
 	}
 
@@ -67,7 +67,7 @@ public class ClientService {
 		try {
 			repository.deleteById(id);
 		} catch (EmptyResultDataAccessException e) {
-			throw new ResourceNotFoundException("Id não encontrado: " + id);
+			throw new ResourceNotFoundException("Cliente de código " +id+ " não encontrado");
 		}
 	}
 }
